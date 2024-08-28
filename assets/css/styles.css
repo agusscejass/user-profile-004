@@ -1,0 +1,88 @@
+/*TODO: FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*TODO: VARIABLES*/
+:root {
+    --bg-card: #FFFFFF;
+    --text: #000000;
+    --bg-btn2: #FFEDD2;
+    --bg-btn: #FA3967 ;
+    --bg-btn-1: #FA9639;
+    --background: #FFEDD2;
+}
+
+/*TODO: RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+
+body {
+    background-color: var(--background);
+}
+
+/*TODO: CARD*/
+.container-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    height: 486px;
+    width: 458px;
+    background-color: var(--bg-card);
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.card p {
+    text-align: center;
+    color: var(--text);
+    width: 60%;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button-size {
+    width: 170px;
+    height: 50px;
+    border-radius: 50px;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text);
+    cursor: pointer;
+    gap: 8px;
+    background: var(--background);
+}
+
+.grad {
+    background: linear-gradient(to right, var(--bg-btn), var(--bg-btn-1));
+}
